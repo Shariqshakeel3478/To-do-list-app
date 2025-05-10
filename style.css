@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.todo-list {
+  background-color: #fff;
+  width: 100%;
+  max-width: 800px;
+  min-height: 70vh;
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-left p:first-child {
+  font-weight: 600;
+  font-size: 20px;
+  color: #333;
+}
+
+.user-left p:last-child {
+  font-size: 14px;
+  color: #777;
+}
+
+.user-right i {
+  font-size: 18px;
+  color: #555;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.user-right i:hover {
+  color: #4070f4;
+}
+
+.status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.box {
+  flex: 1 1 calc(50% - 10px);
+  padding: 20px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.box-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.box .box-bottom h2{
+
+  color: white;
+}
+#today{
+    background-color: #4070f4;
+}
+#today i{
+    color: #4070f4;
+}
+#scheduled{
+    background-color: #e26ad6;
+}
+#scheduled i{
+    color: #e26ad6;
+}
+#overdue{
+    background-color: #9789f0;
+}
+#overdue i{
+    color: #9789f0;
+}
+#all{
+    background-color: #e37982;
+}
+#all i{
+    color: #e37982;
+}
+
+.box:hover {
+  background-color: #dbe6ff;
+}
+
+.box-top i {
+  font-size: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.box-bottom h2 {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.tasks h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.task {
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  transition: 0.3s;
+}
+
+.task:hover {
+  background-color: #f0f0f0;
+}
+
+.task input[type="radio"] {
+  accent-color: #4070f4;
+  width: 18px;
+  height: 18px;
+}
+
+.task p {
+  flex: 1;
+  color: #333;
+  font-weight: 500;
+}
+
+.due {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #888;
+  font-size: 14px;
+}
+
+.buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  font-size: 16px;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  color: #4070f4;
+}
+
+/* all notes */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+}
+
+.all_notes {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+}
+
+.top a,i{
+  text-decoration: none;
+  color: #444;
+  padding: 10px;
+  
+}
+
+
+.notes {
+  width: 700px;
+  position: relative;
+}
+
+.note {
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-top: -10px; /* Overlap previous note */
+  position: relative;
+  z-index: 1;
+  height: 120px;
+
+}
+
+.note:first-child {
+  margin-top: 0;
+}
+
+.note:hover {
+  z-index: 10;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.note-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+}
+
+.note-top p {
+  background-color: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.note-bottom {
+  margin-top: 10px;
+  color: white;
+}
+
+
+#personel{
+  background-color: #4070f4;
+}
+#home{
+  background-color: #e37982;
+}
+#educational{
+  background-color: #9789f0;
+}
+#grocery{
+  background-color: #e26ad6;
+}
