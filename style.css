@@ -288,3 +288,91 @@ body {
 #grocery{
   background-color: #e26ad6;
 }
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .todo-list {
+    padding: 20px 15px;
+    gap: 20px;
+  }
+
+  .status {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .box {
+    flex: 1 1 100%;
+  }
+
+  .task {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task p {
+    margin: 10px 0;
+  }
+
+  .buttons {
+    align-self: flex-end;
+  }
+
+  .notes {
+    width: 90%;
+  }
+
+  .note {
+    height: auto;
+    padding: 15px;
+  }
+
+  .note-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-left p:first-child {
+    font-size: 18px;
+  }
+
+  .user-left p:last-child {
+    font-size: 12px;
+  }
+
+  .task input[type="radio"] {
+    width: 16px;
+    height: 16px;
+  }
+
+  .top {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .top a, .top i {
+    padding: 5px;
+  }
+
+  .box-bottom h2 {
+    font-size: 14px;
+  }
+
+  .box-top i {
+    font-size: 18px;
+  }
+
+  .note-top h2 {
+    font-size: 16px;
+  }
+
+  .note-top p {
+    font-size: 12px;
+  }
+
+  .note-bottom h4 {
+    font-size: 14px;
+  }
+}
