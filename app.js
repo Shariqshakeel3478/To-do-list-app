@@ -2,6 +2,8 @@ document.getElementById('all').addEventListener('click', function () {
     location.href = 'all_notes.html'
 })
 
+
+// alert for validation
 function require(event){
     let input = document.getElementById("floatingInput");
     if(input.value === "") {
@@ -10,6 +12,8 @@ function require(event){
     }
 }
 
+
+// read data
 
 fetch('read.php')
 .then(response=>response.json())
