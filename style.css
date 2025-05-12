@@ -162,7 +162,9 @@ body {
   flex: 1;
   color: #333;
   font-weight: 500;
+  
 }
+
 
 .due {
   display: flex;
