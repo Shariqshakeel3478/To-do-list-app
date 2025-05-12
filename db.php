@@ -7,12 +7,12 @@ $dbname = "todo_db";
 // Connection create karo
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check karo connection hua ya nahi
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+// // Check karo connection hua ya nahi
+// if ($conn->connect_error) {
+//     die("Connection failed: " . $conn->connect_error);
+// }
 
-echo "Connected successfully";
+// echo "Connected successfully";
 
 // CREATE TABLE statement should be inside PHP and executed
 $sql = "CREATE TABLE IF NOT EXISTS tasks (
@@ -24,11 +24,11 @@ $sql = "CREATE TABLE IF NOT EXISTS tasks (
 )";
 
 // Execute the query to create the table
-if ($conn->query($sql) === TRUE) {
-    echo "Table 'tasks' created successfully!";
-} else {
-    echo "Error creating table: " . $conn->error;
-}
+// if ($conn->query($sql) === TRUE) {
+//     echo "Table 'tasks' created successfully!";
+// } else {
+//     echo "Error creating table: " . $conn->error;
+// }
 
 
 

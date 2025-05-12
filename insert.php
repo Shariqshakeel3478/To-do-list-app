@@ -3,6 +3,12 @@
 include 'db.php';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
+
+    if(empty($_POST["task"])){
+        header("Location: index.html");
+    exit();
+    
+}
     // Get user inputs
     $tasks = $_POST['task'];
     $description = $_POST['desc'];
