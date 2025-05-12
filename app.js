@@ -5,7 +5,7 @@ document.getElementById('all').addEventListener('click', function () {
 function require(event){
     let input = document.getElementById("floatingInput");
     if(input.value === "") {
-        alert("Enter value please");
+        alert("Enter task please");
         return false;
     }
 }
