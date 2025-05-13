@@ -7,7 +7,7 @@ $dbname = "todo_db";
 // Connection create karo
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// // Check karo connection hua ya nahi
+// Check karo connection hua ya nahi
 // if ($conn->connect_error) {
 //     die("Connection failed: " . $conn->connect_error);
 // }

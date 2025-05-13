@@ -3,6 +3,8 @@ document.getElementById('all').addEventListener('click', function () {
 })
 
 
+console.log("running")
+
 // alert for validation
 function require(event){
     let input = document.getElementById("floatingInput");
